@@ -9,7 +9,7 @@
     And that's how it looks🤩
  </p>
 
-| ![alt](https://i.imgur.com/09Yg9bz.gif) |
+| ![alt](https://i.imgur.com/1JDErHb.gif) |
 | --------------------------------------- |
 | ![alt](https://i.imgur.com/Co6nUoW.png) |
 
