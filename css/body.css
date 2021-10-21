@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+  box-sizing: border-box;
+}
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(10, 0.4fr);
+ 
+}
+.main-section__header {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+.main-section__header--tag {
+  margin-top: 2.3rem;
+  margin-left: 3rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bolder;
+
+}
+.main-section__header--subtag {
+  margin-left: 3rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+}
+/* .main-section__image{
+ grid-column: span 10;
+  grid-row-start: 3;
+  grid-row-end: 10;
+background: url("../images/International-Hero-Image-Desktop.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: none;
+} */
+.main-section__form{
+ grid-column: span 10;
+  grid-row-start: 2;
+  grid-row-end: 11;
+  background: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.main-section__form--heading{
+  margin-top: 1rem;
+  padding-left: 2rem;
+  font-size: 1.8rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.main-section__form--car-choice{
+  padding-left: 2rem;
+}
+.main-section__form--radio{
+  display: flex;
+ 
+}
+.radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.radio-item input[type='radio'] {
+  display: none;
+}
+
+.radio-item label {
+  color: black;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 1px solid grey;
+  background-color: transparent;
+}
+
+.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  border: 5px solid black;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  content: " ";
+  display: block;
+  background: white;
+}
+
+.main-section__form--name{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  row-gap: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1.3rem;
+}
+
+.main-section__form input[type='email'] , input[type='text'] , input[type='password']{
+  height: 2.4rem;
+  width: 100%;
+   background: #EEEEEE;
+   border:1px solid #cccccc;
+  
+   
+ }
+ .main-section__form input[type='email']:focus , input[type='text']:focus,input[type='password']:focus  {
+  outline: none;
+  border: 0.18rem solid black;
+  background: #f3f3f3;
+  
+   
+ }
+
+.main-section__form--name input[type='text'] {
+ height: 2.4rem;
+
+  background: #EEEEEE;
+  border:1px solid #cccccc;
+ 
+  
+}
+.main-section__form--name input[type='text']:focus {
+outline: none;
+  border: 0.18rem solid black;
+  background: #f3f3f3;
+  
+}
+
+.main-section__form--name #FirstName{
+  grid-column: span 1;
+  width: 100%;
+}
+.main-section__form--name #LastName{
+  grid-column: span 1;
+  width: 100%;
+}
+.main-section__form--email{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1.3rem;
+}
+.main-section__form--password{
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-section__form--number, .main-section__form--location , .main-section__form--code{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1.3rem;
+}
+.main-section__form--terms{
+  padding-left: 2rem;
+  margin-top: 1.3rem;
+}
+.main-section__form--terms p, .main-section__form-ctas p{
+  font-family: 'PT Serif', serif;
+  font-size: 0.789rem;
+}
+
+
+.main-section__form--password-cta_password{
+  height: 100%;
+  display: flex;
+align-items: center;
+background: #EEEEEE;
+border-top: 1px solid #cccccc;
+border-right: 1px solid #cccccc;
+border-bottom: 1px solid #cccccc;
+}
+.main-section__form-ctas{
+  display: flex;
+  flex-direction: row;
+ align-items: center;
+ padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.main-section__form-ctas p{
+align-self: center;
+padding-top: 0.5rem;
+margin-left: 0.5rem;
+}
+@media (min-width:35rem) {
+  .main-section {
+    display: grid;
+    grid-template-columns: repeat(10, 0.4fr);
+    grid-template-rows: repeat(10,0.45fr);
+  }
+  .main-section__image{
+    grid-column: span 10;
+     grid-row-start: 3;
+     grid-row-end: 10;
+   background: url("../images/International-Hero-Image-Desktop.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   }
+   .main-section__header--tag {
+    margin-top: 2.3rem;
+    margin-left: 3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+  
+  }
+   .main-section__form{
+    grid-column: span 10;
+     grid-row-start: 11;
+     grid-row-end: 20;
+     background: white;
+     z-index: 10;
+     display: flex;
+     flex-direction: column;
+     
+   }
+   .main-section__form--name{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: none;
+    column-gap: 1rem;
+    /* flex-direction: row;
+    justify-content: space-between; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1.3rem;
+  }
+}
+
+@media (min-width:70rem) {
+  .main-section {
+    display: grid;
+    grid-template-columns: repeat(10, 0.4fr);
+    grid-template-rows: repeat(10,0.45fr);
+  }
+  .main-section__image{
+    grid-column: span 10;
+     grid-row-start: 3;
+     grid-row-end: 10;
+   background: url("../images/International-Hero-Image-Desktop.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   }
+  .main-section__header {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .main-section__header--tag {
+    margin-top: 2.3rem;
+    margin-left: 3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+  
+  }
+  .main-section__image{
+  grid-column-start:1;
+  grid-column-end: 11;
+  width: 90vw;
+   justify-self: center;
+    grid-row-start: 3;
+    grid-row-end: 10;
+  background: url("../images/International-Hero-Image-Desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+  .main-section__form{
+    grid-column-start: 6 ;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    width: 30rem;
+    background: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+  .main-section__form--name{
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    /* flex-direction: row;
+    justify-content: space-between; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1.3rem;
+  }
+  .main-section__form--name input[type='text'] {
+    height: 2.4rem;
+     width: 12rem;
+     background: #EEEEEE;
+     border:1px solid #cccccc;
+    
+     
+   }
+   .main-section__form--terms p, .main-section__form-ctas p{
+    font-family: 'PT Serif', serif;
+    font-size: 0.7rem;
+  }
+}

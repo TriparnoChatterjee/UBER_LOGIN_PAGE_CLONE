@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap");
+.main-header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  padding: 0.7rem 2rem;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header__brand {
+  text-decoration: none;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.main-nav {
+  display: flex;
+}
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.main-nav__item {
+  margin: 0 1rem;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.2rem 0;
+  font-family: "Ubuntu", sans-serif;
+}
+.main-nav__group--hoverable{
+  display: none;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  
+}
+
+.main-nav__item--cta a {
+  color: black;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
+  color: black;
+  background: rgb(230, 227, 227);
+  border: none;
+}
+@media (min-width:65rem) {
+  .main-nav__group--hoverable {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background: black;
+  }
+  .main-nav__group--hoverable:hover {
+    background: rgba(245, 238, 238, 0.1);
+  }
+  
+}
